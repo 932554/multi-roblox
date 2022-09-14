@@ -4,6 +4,7 @@ using System.Threading;
 using static Multi_Roblox.ConsoleExtensions;
 using static Multi_Roblox.Janitor;
 using static Multi_Roblox.Imports;
+using System.Diagnostics;
 
 namespace Multi_Roblox
 {
@@ -17,7 +18,8 @@ namespace Multi_Roblox
 
             Console.Title = "Multi-Roblox";
 
-            if (FindWindow(null, "Roblox") != IntPtr.Zero)
+            Process[] processes = Process.GetProcessesByName("RobloxPlayerBeta");
+            if (processes.Length > 0)
             {
                 WriteToConsole("Please close Roblox then relaunch this program.", LogTypes.Error);
                 WriteToConsole("Press any key to exit...");
