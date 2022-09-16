@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
+using System.Diagnostics;
 
 using static Multi_Roblox.ConsoleExtensions;
 using static Multi_Roblox.Janitor;
 using static Multi_Roblox.Imports;
-using System.Diagnostics;
 
 namespace Multi_Roblox
 {
